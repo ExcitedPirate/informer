@@ -1,7 +1,7 @@
 FROM python:3.7-alpine
 RUN apk add --no-cache gcc musl-dev
 RUN apk update && apk upgrade && \
-    apk add git alpine-sdk bash python
+    apk add git alpine-sdk bash python3
 RUN mkdir /usr/informer
 WORKDIR /usr/informer
 COPY . /usr/informer
